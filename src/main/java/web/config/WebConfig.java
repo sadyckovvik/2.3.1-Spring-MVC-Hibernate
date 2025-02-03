@@ -28,7 +28,7 @@ public class WebConfig implements WebMvcConfigurer {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         //Это класс Thymeleaf, который отвечает за разрешение (поиск) шаблонов
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/WEB-INF/pages/"); //Указывает папку, в которой находятся HTML-шаблоны
+        templateResolver.setPrefix("/WEB-INF/view/"); //Указывает папку, в которой находятся HTML-шаблоны
         templateResolver.setSuffix(".html"); //расширение файлов шаблонов
         return templateResolver;
     }
